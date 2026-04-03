@@ -17,20 +17,78 @@
 		}
 
 		/* YOUR CSS CODE WILL GO HERE */
-
+		rect {
+			fill: green;
+		}
 
 	</style>
 </head>
 
 <body>
 	<h1 id="header-title">
-		In-Class Acitivity by REPLACE_WITH_YOUR_NAME
+		In-Class Acitivity by 신도헌
 	</h1>
 
 	<svg id="visualization-activity">
 		<!-- YOUR SVG CODE WILL GO HERE -->
+		<g class="bar chart" 
+			transform="translate(0, 0)">
+			<rect x="70" y="80" width="60" height="370" />
+			<rect x="160" y="130" width="60" height="320" />
+			<rect x="250" y="180" width="60" height="270" style="fill: orange;"/>
+			<rect x="340" y="250" width="60" height="200" style="fill: navy;"/>
+			<rect x="430" y="270" width="60" height="180" />
+			<rect x="520" y="275" width="60" height="175" />
+		</g>
+		<g class="axis y-axis">
+    		<line x1="60" y1="50" x2="60" y2="450" stroke="black" />
+			
+			<line x1="55" y1="450" x2="60" y2="450" stroke="black" /> 
+			<text x="45" y="455" font-size="12">0</text> 
+			
+			<line x1="55" y1="400" x2="60" y2="400" stroke="black" />
+    		<text x="20" y="405" font-size="12">10000</text>
 
+    		<line x1="55" y1="350" x2="60" y2="350" stroke="black" />
+    		<text x="20" y="355" font-size="12">20000</text>
 
+			<line x1="55" y1="300" x2="60" y2="300" stroke="black" />
+    		<text x="20" y="305" font-size="12">30000</text>
+
+			<line x1="55" y1="250" x2="60" y2="250" stroke="black" />
+    		<text x="20" y="255" font-size="12">40000</text>
+
+			<line x1="55" y1="200" x2="60" y2="200" stroke="black" />
+    		<text x="20" y="205" font-size="12">50000</text>
+
+			<line x1="55" y1="150" x2="60" y2="150" stroke="black" />
+    		<text x="20" y="155" font-size="12">60000</text>
+
+			<line x1="55" y1="100" x2="60" y2="100" stroke="black" />
+    		<text x="20" y="105" font-size="12">70000</text>
+
+			<line x1="55" y1="50" x2="50" y2="60" stroke="black" />
+    		<text x="20" y="55" font-size="12">80000</text>
+
+			<text transform="rotate(-90,100,100)" x="-80" y="15" textAnchor="middle">Entry Count</text>
+		</g>
+		<g class="axis x-axis">
+    		<line x1="60" y1="450" x2="600" y2="450" stroke="black" />
+
+			<text x="100" y="475" text-anchor="middle">홍대입구</text>
+
+    		<text x="190" y="475" text-anchor="middle">잠실(송파구청)</text>
+
+			<text x="280" y="475" text-anchor="middle">고속터미널</text>
+
+			<text x="370" y="475" text-anchor="middle">서울역</text>
+
+			<text x="460" y="475" text-anchor="middle">신림</text>
+
+			<text x="550" y="475" text-anchor="middle">신도림</text>
+
+			<text x="270" y="500" textAnchor="middle">Station Name</text>
+		</g>
 	</svg>
 
 </body>
